@@ -1,0 +1,41 @@
+/* components/datetime/index.wxss */
+.container {
+  background: #ffffff;
+}
+.picker-view {
+  width: 100%;
+  height: 150rpx;
+}
+.indicator {
+  height: 50rpx;
+  border-top: 2rpx solid #aeafaf47;
+  border-bottom: 2rpx solid #aeafaf47;
+}
+.picker-view-column-item {
+  line-height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt20 {
+  margin-top: 20rpx;
+}
+.mr40 {
+  margin-right: 40rpx;
+}
+.fr {
+  display: flex;
+  flex-direction: row;
+}
+.ac {
+  align-items: center;
+}
+.bar {
+  font-size: 30rpx;
+  margin: 40rpx;
+  color: #02A7F0;
+}
+.jsb {
+  justify-content: space-between;
+}

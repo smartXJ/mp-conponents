@@ -1,0 +1,33 @@
+<!--components/datetime/index.wxml-->
+<view class="container">
+  <!-- 年月日 -->
+  <picker-view indicator-class="indicator" class="picker-view" value="{{date}}" bindchange="bindChangeDate">
+    <block wx:for="{{dateList}}"  wx:key="index">
+      <picker-view-column >
+        <view wx:for="{{item}}" wx:for-item="element" wx:for-index="idx"  wx:key="idx" class="picker-view-column-item">{{element}}</view>
+      </picker-view-column>
+      <view class="fr ac"  wx:if="{{index !== 2}}">
+        <text class="indicator">-</text>
+      </view>
+    </block>
+  </picker-view>
+  <!-- 时分秒 -->
+  <picker-view indicator-class="indicator" class="picker-view mt20" value="{{time}}" bindchange="bindChangeTime">
+    <block wx:for="{{timeList}}"  wx:key="index">
+      <picker-view-column >
+        <view wx:for="{{item}}" wx:for-item="element" wx:for-index="idx"  wx:key="idx" class="picker-view-column-item">{{element}}</view>
+      </picker-view-column>
+      <view class="fr ac"  wx:if="{{index !== 2}}">
+        <text class="indicator">:</text>
+      </view>
+    </block>
+  </picker-view>
+  <!-- 确认 取消 -->
+  <view class="fr jsb">
+    <view></view>
+    <view class="fr bar">
+      <view bindtap="onCancel" class="mr40">取消</view>
+      <view bindtap="onConfirm">确认</view>
+    </view>
+  </view>
+</view>
