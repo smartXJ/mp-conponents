@@ -1,6 +1,5 @@
 <!--index.wxml-->
 <view class="">
-  <!-- <view wx:for="list" wx:key="index">
-  </view> -->
-  <datetime bind:confirm="confirm" bind:cancel="cancel" model:value="{{datetime}}"></datetime>
+  <datetime bind:confirm="confirm" bind:cancel="cancel" model:value="{{datetime}}">
+  </datetime>
 </view>
