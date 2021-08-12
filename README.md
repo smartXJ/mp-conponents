@@ -8,4 +8,4 @@ bind方法
   cancel: 点击取消时调用
 
 展示
-![1](https://raw.githubusercontent.com/smartXJ/mp-components/master/img/datetime.png)
+![1](https://raw.githubusercontent.com/smartXJ/mp-conponents/master/img/datetime.png)
